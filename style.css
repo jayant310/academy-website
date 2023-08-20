@@ -1,0 +1,658 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -----------heading start -------- */
+.heading{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.heading h1{
+    font-size: 40px;
+}
+.heading span{
+    color: maroon;
+}
+.heading img{
+    width: 200px;
+}
+/* -----------heading end ---------- */
+/* -------------navbar start------------ */
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 100;
+}
+.navbar .container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .container .logo{
+    width: auto;
+    height: 100%;
+}
+.navbar .container .logo img{
+    width: auto;
+    height: 95%;
+}
+.navbar .container .menux a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-left: 12px;
+}
+.navbar .container .menux i{
+    font-size: 20px;
+    margin-left: 10px;
+}
+/* -------------navbar end------------ */
+/* -------------banner start------------ */
+
+.banner{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.banner img{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -8;
+    filter: blur(6px);
+}
+.banner .container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.banner .container .text-area{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner .container .text-area h1{
+    font-size: 40px;
+
+}
+.banner .container .text-area h1 span{
+    color: maroon;
+}
+.banner .container .text-area h3{
+    font-size: 20px;
+    margin:10px 0 ;
+} 
+.banner .container .text-area .buttons{
+    display: flex;
+    margin-top: 20px;
+}
+.banner .container .text-area .buttons .btn{
+    background-color: maroon;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.banner .container .text-area .buttons .btn.btn-active{
+    background-color: gray;
+    margin-right: 10px;
+}
+    
+.banner .container .img-area{
+    width: 45%;
+    height: 100%;
+  
+}
+.banner .container .img-area img{
+    height: 100%;
+    width: auto;
+    /* filter: drop-shadow(5px); */
+    filter: drop-shadow(7px -2px 11px #bfbfbf);
+
+}
+/* -------------banner end-------------- */
+/* -------------service start------------ */
+.service{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(234, 234, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service .container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.service .container .card{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px 15px;
+}
+.service .container .card h2{
+    font-size: 20px;
+    margin: 5px 0;
+    color: rgb(101, 101, 101);
+}
+.service .container .card img{
+    width: 70px;
+}
+/* -------------service end-------------- */
+/* -------------About start-------------- */
+.about
+{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(215, 215, 215);
+}
+.about .container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.about .container .text-area p{
+    margin: 20px 0;
+}
+.about .container .text-area .button{
+    background-color: maroon;
+    width: 150px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.about .container .img-area img{
+    width: 600px;
+}
+/* -------------About End-------------- */
+/* -------------menu start------------- */
+.menu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.menu .container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu .container .menu-card{
+    width: 290px;
+    height: 530px;
+    margin-bottom:15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+   
+}
+.menu .container .menu-card .icon-area{
+    position: absolute;
+    right: -60px;
+    top: 10px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+.menu .container .menu-card:hover .icon-area{
+    right: 10px;
+}
+
+.menu .container .menu-card .p-text{
+    position: absolute;
+    background-color: greenyellow;
+    top: 30px;
+    padding: 0 5px;
+}
+
+.menu .container .menu-card .icon-area i{
+    background-color: rgba(255, 255, 255, 0.379);
+    margin: 5px;
+    padding: 8px;
+    border-radius: 4px;
+}
+.menu .container .menu-card .menu-img{
+    width: 100%;
+    height: 45%;
+    overflow: hidden;
+}
+.menu .container .menu-card .menu-img img{
+    width: 100%;
+    height: 100%;
+}
+.menu .container .menu-card .menu-text{
+    width: 100%;
+    height: 55%;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .container .menu-card .menu-text h2{
+    font-family: 'Allura', cursive;
+    font-size: 38px;
+    color: maroon;
+}
+.menu .container .menu-card .menu-text h3{
+    font-size: 30px;
+}
+.menu .container .menu-card .menu-text .button{
+    width: 150px;
+    background-color: maroon;
+    padding: 8px 0;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: white;
+}
+.menu .container .menu-card .menu-text .rating i{
+    font-size: 18px;
+    color: rgb(195, 195, 10);
+
+}
+
+
+/* -------------menu end-------------- */
+/* -------------intro star-------------- */
+.intro{
+    width: 100%;
+    height: 500px;
+    background: url(./img/newbanner.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.intro .container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.21);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.1px);
+-webkit-backdrop-filter: blur(5.1px);
+border: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+.intro .container img{
+    width: 350px;
+}
+.intro .container .rotate-img{
+    transform: rotate(180deg);
+}
+.intro .container .button{
+    background-color: maroon;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.intro .container h1{
+    font-family: 'Allura', cursive;
+    font-size: 40px;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.intro .container h1:hover{
+    font-size: 45px;
+}
+
+/* -------------intro end-------------- */
+/* -------------Branch start-------------- */
+.branch{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.branch .container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.branch .container .branch-card:nth-child(2n){
+    flex-direction: row-reverse;
+}
+.branch .container .branch-card{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(213, 213, 213);
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.branch .container .branch-card .branch-img{
+    width: 45%;
+    height: 100%;
+    background-color: blue;
+}
+.branch .container .branch-card .branch-img img{
+    width: 100%;
+    height: 100%;
+}
+.branch .container .branch-card .branch-info{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.branch .container .branch-card .branch-info h1{
+    color: maroon;
+}
+.branch .container .branch-card .branch-info .dish{
+    display: flex;
+    gap: 10px;
+}
+.branch .container .branch-card .branch-info .dish span{
+    color: green;
+}
+
+.branch .container .branch-card .branch-info .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.branch .container .branch-card .branch-info .inner .rating i{
+    font-size: 20px;
+    color: rgb(166, 114, 0);
+}
+.branch .container .branch-card .branch-info .book-btn{
+    background-color: maroon;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #fff;
+}
+/* -------------Branch End---------------- */
+/* -------------Testimonial Start-------------- */
+.coustmer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.coustmer .container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.coustmer .container .card{
+    overflow: hidden;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.coustmer .container .card .img-box{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+.coustmer .container .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.coustmer .container .card p1{
+    font-size: 18px;
+    color: maroon;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+
+.coustmer .container .card .rating i{
+    font-size: 17px;
+    margin-top: 15px 
+}
+
+
+/* -------------Testimonial End---------------- */
+/* -------------gallery start---------------- */
+.heading img{
+    padding-bottom: 25px;
+}
+.gallery{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 201, 201);
+}
+
+.gallery .container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.gallery .container .cards{
+    width: 295px;
+    height: 270px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.gallery .container .cards img{
+    width: 100%;
+    height: 100%;
+}
+
+/* -------------gallery End---------------- */
+.contact{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-top: 10px;
+    border-top: 1px solid rgb(199, 199, 199);
+}
+.contact .map{
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+.contact .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact .form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .form form{
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .form form input{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 50px;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    border: 2px solid gray;
+}
+.contact .form form textarea{
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid gray;
+    margin-bottom: 10px;
+}
+.contact .form form .submit{
+    background-color: maroon;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+/* -------------gallery End---------------- */
+/* -------------Footer start-------------- */
+.footer{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(229, 225, 225);
+}
+.footer .container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+    margin-top: 50px;
+}
+.footer .container .item{
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+}
+.footer .container .item h2{
+    margin-bottom: 20px;
+    color: maroon;
+}
+.footer .container .item.item1 img{
+    width: 80%;
+    height: auto;
+}
+.footer .container .item.item2{
+    display: flex;
+    flex-direction: column;
+}
+.footer .container .item.item2 a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 15px;
+}
+.footer .container .item.item3 img{
+    width: 90%;
+}
+.footer .container .item.item4 input{
+    width: 176px;
+    height: 37px;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 5px;
+}
+.footer .container .item.item4 i{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.footer-line{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/* ---------------Footer End-------------- */
